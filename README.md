@@ -1,3 +1,5 @@
+
+ ![alt text](https://github.com/gvargasv93/Kubernetes-App/blob/main/cover-docker-compose.webp?raw=true)
 En este proyecto tengo una aplicacion CRUD generadora de datos falsos utilizando flask y python  cada servicio esta implementado en el archivo docker-compose de la carpeta Docker-compose-services-master es decir 
 toda esta aplicacion esta construida sobre docker-compose , la base de datos a la que se conecta el servicio faker-service es una base de datos
 postgresql vigente en Heroku
