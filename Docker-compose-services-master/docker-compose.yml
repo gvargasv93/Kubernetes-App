@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  faker-service:
+    image: gvargasv/faker_service:latest
+    ports:
+     - 5000:3000
+    container_name: servicio_datos_falsos
+
+  api-service:
+    restart: always
+    image: gvargasv/api_service:latest
+    ports:
+     - 5001:81
+    container_name: servicio_api_rest
+  
+         
+  web-service:
+    restart: always
+    image: gvargasv/web_service:latest
+    ports:
+      - 5002:82
+    container_name: servicio_web_app
+    depends_on:
+      - api-service
+ 
+
